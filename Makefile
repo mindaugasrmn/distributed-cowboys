@@ -5,7 +5,7 @@ CMD_DIR=cmd
 HOME_DIR=${HOME}
 PROTO_DIR=proto
 
-init:
+k8s-apply:
 	@echo " > Initializing minikube"
 	@kubectl apply -f k8s/rules.yaml
 	@kubectl apply -f k8s/01-zookeeper.yaml

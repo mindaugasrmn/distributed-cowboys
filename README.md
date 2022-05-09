@@ -9,6 +9,7 @@ make proto-all
 
 # init project
 ```
+make k8s-apply
 make init
 ```
 
