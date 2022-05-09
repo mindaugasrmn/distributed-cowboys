@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package logs;
+
+option go_package = "github.com/mindaugasrmn/distributed-cowboys/proto/logs";
+
+service LogsServiceV1 {
+  rpc LogV1 (LogRequestV1) returns (LogResponseV1) {}
+}
+
+message LogRequestV1{
+  Record Record = 1;
+}
+
+message LogResponseV1{
+  uint64 offset = 1;
+}
+
+message Record{
+  bytes value = 1;
+  uint64 offset = 2;
+}

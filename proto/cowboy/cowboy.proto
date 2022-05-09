@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package log;
+
+option go_package = "github.com/mindaugasrmn/distributed-cowboys/proto/cowboy";
+
+service CowboyV1 {
+  rpc ShootV1(ShootRequestV1) returns (ShootResponseV1) {}
+}
+
+message ShootRequestV1{
+  uint64 damage = 1;
+}
+
+message ShootResponseV1{
+  string msg = 1;
+  string status =2;
+}
