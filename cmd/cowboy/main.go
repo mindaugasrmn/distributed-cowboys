@@ -17,7 +17,6 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/robfig/cron/v3"
 
-	//cowbloyDeliverygRPC "github.com/mindaugasrmn/distributed-cowboys/core/cowboy/delivery/grpc"
 	cowboyUsecases "github.com/mindaugasrmn/distributed-cowboys/core/cowboy/usecases"
 	"github.com/mindaugasrmn/distributed-cowboys/helpers/kafkautils"
 	pbCowboy "github.com/mindaugasrmn/distributed-cowboys/proto/cowboy"
